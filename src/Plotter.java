@@ -36,7 +36,7 @@ public class Plotter extends JFrame {
 				
 				int d = convergence(c, a, 255);
 
-				g2d.setColor(new Color(255-d, 255-d, 255-d));
+				g2d.setColor(new Color(d, d, d));
 				g2d.drawRect(x, y, 1, 1);
 
 			}
@@ -208,7 +208,7 @@ public class Plotter extends JFrame {
 	public static void main(String args[]) throws IOException{
 		
 		if(args.length==6)
-			new Plotter(500, 500,
+			new Plotter(4096, 4096,
 	    	  		new Complex(new Double(args[0]), new Double(args[1])),
 	    	  		new Double(args[2]),new Double(args[3]),new Double(args[4]),new Double(args[5]));
 		else

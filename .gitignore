@@ -6,5 +6,6 @@ bin/
 .settings/
 
 *.zip
+*.jar
 
 
